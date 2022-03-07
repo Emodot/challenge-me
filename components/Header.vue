@@ -1,5 +1,5 @@
 <template>
-  <div v-scroll="handleScroll" class="container" :class="{change_color: scrollPosition > 50}">
+  <div class="container" :class="{change_color: scrollPosition > 50}">
     <div class="logo">
       <img src="~assets/img/challengeMe-white 1.png" alt="">
     </div>
@@ -25,12 +25,12 @@ export default {
       scrollPosition: null
     }
   },
+  mounted () {
+    window.addEventListener('scroll', this.updateScroll)
+  },
   methods: {
     updateScroll () {
       this.scrollPosition = window.scrollY
-    },
-    mounted () {
-      window.addEventListener('scroll', this.updateScroll)
     }
   }
 
@@ -46,12 +46,12 @@ export default {
   justify-content: space-between;
   align-items: center;
   /* background-color: black; */
-  height: 130px;
+  height: 110px;
   padding: 20px 100px;
 }
 
 .change_color {
-  background-color:red;
+  background-color: rgb(41, 41, 41);
 }
 
 .logo img {
