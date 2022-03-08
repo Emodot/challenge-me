@@ -5,20 +5,24 @@
       <hr class="line">
       <p class="sub-head">Meet the team that  makes the process of this system fast and painless as possible to provide you with good result </p>
       <carousel-3d>
-        <slide :index="0">
-          <img src="~assets/img/possible.jpg" alt="">
+        <slide :index="0" class="slide-1">
+          <p class="position">CEO/MD</p>
+          <p class="username">Olajide A. Oladapo</p>
         </slide>
-        <slide :index="1">
-          <img src="~assets/img/davidemaye.jpg" alt="">
+        <slide :index="1" class="slide-2">
+          <p class="position">CTO</p>
+          <p class="username">David Emaye</p>
         </slide>
-        <slide :index="2">
-          Slide 5 Content
+        <slide :index="2" class="slide-3">
+          <div />
         </slide>
-        <slide :index="3">
-          <img src="~assets/img/ernessy.jpg" alt="">
+        <slide :index="3" class="slide-4">
+          <p class="position">CMO</p>
+          <p class="username">Ernest Ebuka</p>
         </slide>
-        <slide :index="4">
-          Slide 4 Content
+        <slide :index="4" class="slide-5">
+          <p class="position">Media Officer</p>
+          <p class="username">Ajayi Possible</p>
         </slide>
       </carousel-3d>
       <div class="testimonial-section">
@@ -104,6 +108,49 @@ export default {
 }
 
 /* CAROUSEL 3D SLIDE  */
+.slide-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.644)), url('~assets/img/possible.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 0 20px 30px;
+}
+
+.slide-1 {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.644)), url('~assets/img/possible.jpg'); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 0 20px 30px;
+}
+
+.slide-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.644)), url('~assets/img/davidemaye.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 0 20px 30px;
+}
+
+.slide-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.644)), url('~assets/img/ernessy.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 0 20px 30px;
+}
+
+.position {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.username {
+  color: #fff;
+  /* font-weight: 700; */
+}
 
 .carousel-3d-slide {
   border-radius: 10px;
