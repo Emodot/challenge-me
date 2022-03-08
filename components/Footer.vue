@@ -90,6 +90,7 @@ export default {
   font-size: 12px;
   line-height: 25px;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .bottom-footer {

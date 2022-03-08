@@ -75,6 +75,7 @@ input {
   height: 50px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 </style>
