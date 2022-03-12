@@ -26,7 +26,7 @@
         <p class="text">Sell</p>
         <p class="text">Contact Us</p>
       </div>
-      <div class="section-2">
+      <div class="section-3">
         <p class="head">Get in Touch</p>
         <p class="text">0802 345 6789</p>
         <p class="text">12, Address Street, Ondo, Nigeria</p>
@@ -104,5 +104,36 @@ export default {
 .copyright {
   color: #fff;
   font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    /* width: 100%; */
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .head {
+    font-size: 15px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .section-1 {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  .section-2 {
+    flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+
+  .section-3 {
+    flex-basis: 100%;
+  }
 }
 </style>

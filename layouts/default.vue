@@ -1,11 +1,40 @@
 <template>
   <div>
-    <div class="header-section">
-      <Header />
+    <div class="header-container">
+      <Header
+        v-show="!showMobileMenu"
+        @showMobileMenu="showMobileMenu = true"
+      />
     </div>
-    <Nuxt />
+    <div class="mobile-menu">
+      <MobileMenu
+        v-show="showMobileMenu"
+        @closeMobileMenu="showMobileMenu = false"
+      />
+    </div>
+    <div class="main-content">
+      <Nuxt />
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      showMobileMenu: false
+    }
+  },
+  watch: {
+    $route () {
+      // console.log(to);
+      // console.log(from);
+      // this.checkLogin()
+      this.showMobileMenu = false
+    }
+  }
+}
+</script>
 
 <style>
 

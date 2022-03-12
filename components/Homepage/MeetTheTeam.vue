@@ -248,4 +248,38 @@ export default {
   font-weight: 500;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 50px 20px;
+  }
+  .head {
+    font-size: 25px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .carousel-3d-container {
+    width: 100%;
+  }
+
+  .testimonial-inner {
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .testimonial-text {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .lhs svg,
+  .rhs svg {
+    width: 35px;
+  }
+}
 </style>

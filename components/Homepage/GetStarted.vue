@@ -55,4 +55,29 @@ export default {
 .dashboard img {
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 70px 50px 0;
+  }
+
+  .head {
+    font-size: 25px;
+    width: 100%;
+    line-height: 30px;
+  }
+
+  .signup {
+    margin-top: 10px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .dashboard {
+    margin-top: 40px;
+  }
+}
 </style>

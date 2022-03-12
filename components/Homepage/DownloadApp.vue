@@ -75,4 +75,32 @@ export default {
   /* background-image: url('~/assets/icons/Rectangle 319.png'); */
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 40rem;
+  }
+
+  .inner {
+    background-size: 150% 30%;
+    background-position-x: center;
+  }
+
+  .head {
+    font-size: 25px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .download-app {
+    margin: 30px 0 70px;
+  }
+
+  .mobile-app-section img {
+    width: 90%;
+  }
+}
 </style>

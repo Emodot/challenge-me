@@ -78,4 +78,19 @@ input {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 50px 20px;
+    margin-top: 70px;
+  }
+  .head {
+    font-size: 25px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+    width: 100%;
+  }
+}
 </style>

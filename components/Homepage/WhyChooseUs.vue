@@ -102,4 +102,28 @@ export default {
   font-family: 'DM Sans', sans-serif;
   line-height: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .card-1 {
+    width: 100%;
+  }
+
+  .sub-head {
+    width: 90%;
+    line-height: 25px;
+  }
+
+  .head {
+    font-size: 25px;
+  }
+}
 </style>

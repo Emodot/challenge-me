@@ -133,4 +133,41 @@ export default {
   line-height: 25px;
   /* width: 250px; */
 }
+
+@media screen and (max-width: 600px) {
+  .section-1 {
+    padding: 50px 20px;
+  }
+
+  .head {
+    font-size: 25px;
+  }
+
+  .content {
+    background-image: none;
+    padding: 0;
+  }
+
+  .card-1,
+  .card-2 {
+    flex-basis: 100%;
+    margin-bottom: 70px;
+  }
+
+  .card-2 {
+    flex-direction: row;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .sub-text {
+   font-size: 15px;
+  }
+
+  .rhs {
+    width: 100%;
+  }
+}
 </style>

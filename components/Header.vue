@@ -15,6 +15,11 @@
       <div class="vl" />
       <button class="signup">REGISTER</button>
     </div>
+    <div class="hamburger" @click="$emit('showMobileMenu')">
+      <span class="bar" />
+      <span class="bar" />
+      <span class="bar" />
+    </div>
   </div>
 </template>
 
@@ -51,7 +56,7 @@ export default {
 }
 
 .change_color {
-  background-color: rgb(41, 41, 41);
+  background-color: #151515;
 }
 
 .logo img {
@@ -103,6 +108,47 @@ a:hover {
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
+}
+
+.hamburger,
+.mobile-logo {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    padding : 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F8FC;
+  }
+
+  .menus,
+  .login-signup {
+    display: none;
+  }
 }
 
 </style>

@@ -48,4 +48,19 @@ export default {
 .video svg {
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .inner {
+    /* display: block; */
+    padding: 20px;
+    height: 30rem;
+  }
+
+  .video {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70%;
+  }
+}
 </style>

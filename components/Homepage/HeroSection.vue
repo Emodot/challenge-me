@@ -105,4 +105,22 @@ export default {
   width: 60%;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .container-1,
+  .container-2 {
+    padding: 20px;
+    height: 40rem;
+    background-position: center;
+  }
+
+  .head {
+    font-size: 25px;
+  }
+
+  .sub-head {
+    font-size: 15px;
+    width: 100%;
+  }
+}
 </style>
